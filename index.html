@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>encriptador</title>
+</head>
+<body>
+    <div class="left">
+        <img src="logo.png" alt="logo">
+
+        <div>
+            <textarea class="text" id="text" rows="10" placeholder="Digite seu texto"></textarea>
+        </div>
+        <p class="aviso-letras"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+          </svg> Apenas letras minúsculas e sem acento.</p>
+        <div class="botoes">
+            <button onclick="encriptarTexto()" class="btn-cript">criptografar</button>
+            <button onclick="desencriptarTexto()" class="btn-descr">descriptografar</button>
+        </div>
+    </div>
+    <div class="right">
+
+        <div class="messages">
+
+            <div class="content-vaziu" id="content-vaziu">
+
+                <img src="imagem.png" class="imagem">
+
+                <h1>Nenhuma mensagem</h1>
+                <h1 class="h1-2">encontrada</h1>
+
+                <p>Digite um texto que você deseja</p>
+                <p class="p-2">criptografar ou descriptografar</p>
+
+            </div>
+            <div class="content" id="content">
+                <h2 id="mensagem-cript"></h2>
+                <button onclick="copiarTexto()" class="btn-copy">copiar</button>
+            </div>
+            
+
+        </div>
+
+    </div> 
+    
+</body>
+</html>
+
+<script src="app.js"></script>
